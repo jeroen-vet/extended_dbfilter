@@ -2,14 +2,14 @@
     'name': 'Extended DB Filter with SLD Placeholder',
     'version': '1.0',
     'depends': ['web'],
-    'installable': True,
-    'auto_install': True,
+    'installable': False,
+    'auto_install': False,
     'external_dependencies': {
         'python': ['publicsuffix'],
     },
     'summary': 'Extends Odoo database filter with an %s placeholder for Second-Level Domains (SLD) and also returns only one database',
     'description': """
-        This module overrides Odoo's db_filter function in odoo.http to introduce a %s
+        This system wide module overrides Odoo's db_filter function in odoo.http to introduce a %s
         placeholder that extracts the Second-Level Domain (SLD) from the request hostname
         (e.g., 'domain' from 'x.domain.com' or 'domain.co.uk'). It retains default %h
         (hostname without www.) and %d (first part of hostname) behaviors, selecting
