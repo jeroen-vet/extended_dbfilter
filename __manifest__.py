@@ -1,4 +1,4 @@
-{{
+{
     'name': 'Extended DB Filter with SLD Placeholder',
     'version': '1.0',
     'depends': ['web'],
