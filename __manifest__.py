@@ -2,8 +2,9 @@
     'name': 'Extended DB Filter with SLD Placeholder',
     'version': '1.0',
     'depends': ['web'],
-    'installable': False,
-    'auto_install': False,
+    'installable': True,
+    'application': False,
+    'auto_install': True,
     'external_dependencies': {
         'python': ['publicsuffix'],
     },
